@@ -1,0 +1,275 @@
+#root {
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+
+}
+
+header{
+  padding: 60px 150px;
+  padding-bottom: 140px;
+  border: 1px solid hsl(353, 100%, 62%);
+  border-bottom-left-radius: 80px;
+  position: relative;
+  background-blend-mode: lighten;
+z-index: 0;
+
+
+}
+
+nav{
+  width: 100%;
+  
+}
+
+.mx-20{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.links div{
+  margin-left: 30px;
+  margin-right: 15px;
+  align-self: center;
+}
+
+footer a{
+  color: white;
+  
+}
+
+#loginBtn{
+  all: unset;
+  cursor: pointer;
+  margin-right: 30px;
+
+}
+
+#learnBtn{
+  all: unset;
+  cursor: pointer;
+  border: 1px solid white;
+  padding: 7px 20px;
+  border-radius: 20px;
+  margin-left: 10px;
+  font-weight: 600;
+ 
+}
+
+.buttons :nth-child(1), .buttons :nth-child(2){
+  background-color: white;
+  border: 1px solid white;
+  padding: 7px 20px;
+  border-radius: 20px;
+}
+
+header h1{
+  padding-top: 75px;
+  padding-bottom: 8px;
+  font-size:55px;
+}
+
+header p{
+  padding-bottom: 35px;
+}
+
+#pattern{
+  position:absolute;
+  width: 3000px; 
+  inset: 0; 
+  z-index: -1; 
+ transform: translateY(-42%);
+ left: -25%;
+
+}
+
+.innerHeader{
+  position: relative;
+  z-index: 1; 
+}
+
+.main1{
+  background-color: white;
+  position: relative;
+  padding-top: 125px;
+  padding-bottom: 125px;
+  
+}
+
+#editor{
+position: absolute;
+transform: translateY(-13%);
+right: -12%;
+width: 800px;
+
+}
+
+#innerMain1{
+  width: 50%;
+  padding: 80px;
+ 
+}
+
+.main1 h2{
+  font-size:35px;
+  
+}
+
+#innerMain1 h3{
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+#innerMain1 div{
+  padding: 30px 70px;
+}
+
+.main2{
+  position: relative;
+  background-blend-mode: lighten;
+ z-index:0;
+ border: 1px solid hsl(237, 23%, 31%);
+  border-bottom-left-radius: 80px;
+  border-top-right-radius: 80px;
+}
+
+.main2 h2{
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+#innerMain2{
+width: 50%;
+margin-left: 50%;
+padding: 110px 150px 115px 50px;
+position: relative;
+
+}
+
+#phones{
+position: absolute;
+transform: translateY(-13%);
+left: 10%;
+z-index:2;
+}
+
+#circles{
+  position: absolute;
+  transform: translateY(-52%);
+  left: -13%;
+ z-index: 1;
+ 
+}
+
+.clip{
+  inset: 0;
+  position:absolute;
+  overflow: hidden;
+  border: 1px solid hsl(237, 23%, 31%);
+  border-bottom-left-radius: 80px;
+  border-top-right-radius: 80px;
+}
+
+.main3{
+  position: relative;
+  margin: 120px 100px 30px 0px;
+}
+
+.innerMain3{
+  padding: 200px 100px;
+  width: 50%;
+  margin-left: 50%;
+}
+
+#laptop{
+  position: absolute;
+  left: -20%;
+}
+
+.innerMain3 div{
+  padding-bottom: 70px;
+}
+
+.innerMain3 h3{
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+footer{
+  padding: 80px 270px 100px 170px;
+  background-color: #24242c;
+  border: 1px solid #24242c;
+  border-top-right-radius: 80px;
+}
+
+footer div{
+  flex-direction: column;
+ gap: 12px;
+}
+
+footer p{
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+footer a{
+  color: #a5a6ad;
+  text-decoration: none;
+}
+
+footer a:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#signupBtn:hover, #startBtn:hover{
+background-color: hsl(355, 100%, 74%);
+color: white;
+cursor: pointer;
+}
+
+#learnBtn:hover{
+  background-color: white;
+  cursor:pointer;
+  color: hsl(353, 100%, 62%) ;
+}
+
+.links > :nth-child(n+2):hover{
+text-decoration: underline;
+}
+
+.links > :nth-child(n+2):hover img {
+  transform: rotate(180deg);
+}
+
+#connect{
+  position: relative;
+}
+
+.dropdown{
+  position: absolute;
+  top: 98%;
+  right: -30%;
+  flex-direction: column;
+  background-color: white;
+  padding: 15px;
+  border: 1px solid white;
+  border-radius: 5px;
+ gap: 3px;
+ visibility: hidden;
+}
+
+.dropdown a{
+  text-decoration: none;
+  color: grey;
+  font-size: 13px;
+  font-weight: 600; 
+}
+
+#connect:hover .dropdown{
+visibility: visible;
+}
+
+.dropdown a:hover{
+  color: black;
+}

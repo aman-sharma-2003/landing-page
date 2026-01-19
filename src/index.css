@@ -1,0 +1,85 @@
+:root {
+  font-family: "Overpass", sans-serif;
+  line-height: 1.5;
+  font-weight: 300;
+
+  --orange-300: hsl(13, 100%, 72%);
+  --red-550: hsl(353, 100%, 62%);
+  --purple-950: hsl(237, 17%, 21%);
+  --purple-900: hsl(237, 23%, 31%);
+
+  color-scheme: light dark;
+  color: black;
+  background: white;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+
+}
+*{
+  padding: 0;
+margin: 0;
+}
+
+.light{
+  font-weight: 300;
+}
+
+.bold{
+  font-weight: 600;
+}
+
+.bgRed{
+  background: linear-gradient(to right, var(--orange-300), var(--red-550));
+}
+
+.bgBlue {
+  background: linear-gradient(to bottom, var(--purple-950), var(--purple-900));
+}
+
+.flex{
+  display: flex;
+}
+
+.white{
+  color: hsl(0, 100%, 100%);
+}
+
+.spaceBetween{
+  justify-content: space-between;
+}
+
+.red400{
+  color: hsl(355, 100%, 74%);
+}
+
+.red500{
+  color: hsl(356, 100%, 66%);
+}
+
+.blue900{
+  color: hsl(208, 49%, 24%);
+}
+
+.gray900{
+  color: hsl(240, 10%, 16%);
+}
+
+.gray600{
+  color: hsl(207, 13%, 34%);
+}
+
+.textCenter{
+text-align: center;
+}
+
+.center{
+  justify-content: center;
+}
+
+.gap10{
+gap: 10px;
+}
