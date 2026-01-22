@@ -1,252 +1,353 @@
-#root {
-  width: 100%;
+.container{
+  max-width: 1310px;
   margin: 0 auto;
   overflow-x: hidden;
-
 }
 
-header{
+header {
   padding: 60px 150px;
   padding-bottom: 140px;
   border: 1px solid hsl(353, 100%, 62%);
   border-bottom-left-radius: 80px;
   position: relative;
   background-blend-mode: lighten;
-z-index: 0;
-
-
+  z-index: 0;
+  overflow: hidden;
 }
 
-nav{
+nav {
   width: 100%;
-  
 }
 
-.mx-20{
+.mx-20 {
   margin-left: 20px;
   margin-right: 20px;
 }
 
-.links div{
+.links div {
   margin-left: 30px;
   margin-right: 15px;
   align-self: center;
 }
 
-footer a{
-  color: white;
-  
+#hamburger {
+  all: unset;
+  display: none;
 }
 
-#loginBtn{
+.hamburgerData {
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 20%;
+  color: #304457;
+  font-weight: 600;
+  width: 95%;
+  height: fit-content;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 15px 10px;
+  border: 1px solid white;
+  border-radius: 8px;
+  font-size: 18px;
+  z-index: 2;
+  gap: 5px;
+  height: 300px;
+  display: none;
+}
+
+.hamburgerData a:hover {
+  cursor: pointer;
+}
+
+#line {
+  height: 2px;
+  width: 95%;
+  background-color: #efeff1;
+}
+
+.hamburgerDataButtons {
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+
+#hamburgerConnect {
+  position: relative;
+}
+
+.hamburgerDataDropdown {
+  flex-direction: column;
+  background-color: #efeff1;
+  border: 1px solid white;
+  border-radius: 7px;
+  gap: 15px;
+  padding: 20px 60px;
+  margin-top: 10px;
+  position: absolute;
+  left: -62px;
+  top: 14px;
+  visibility: hidden;
+}
+
+.hamburgerDataDropdown a {
+  text-decoration: none;
+  color: grey;
+  font-size: 18px;
+  font-weight: 600;
+  align-self: center;
+}
+
+.hamburgerDataDropdown a:hover {
+  color: black;
+}
+
+.hamburgerDataButtons button {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+#hamburgerSignup {
+  color: white;
+  background-color: hsl(353, 100%, 62%);
+  padding: 12px 37px;
+  border-radius: 25px;
+}
+
+footer a {
+  color: white;
+}
+
+#loginBtn {
   all: unset;
   cursor: pointer;
   margin-right: 30px;
-
 }
 
-#learnBtn{
+#learnBtn {
   all: unset;
   cursor: pointer;
   border: 1px solid white;
-  padding: 7px 20px;
-  border-radius: 20px;
+  padding: 12px 24px;
+  border-radius: 25px;
   margin-left: 10px;
   font-weight: 600;
- 
 }
 
-.buttons :nth-child(1), .buttons :nth-child(2){
+button {
+  font-family: "Overpass", sans-serif;
+  font-size: 16px;
+}
+
+.buttons :nth-child(1),
+.buttons :nth-child(2) {
   background-color: white;
   border: 1px solid white;
-  padding: 7px 20px;
-  border-radius: 20px;
+  padding: 12px 24px;
+  border-radius: 25px;
 }
 
-header h1{
+header h1 {
   padding-top: 75px;
   padding-bottom: 8px;
-  font-size:55px;
+  font-size: 55px;
 }
 
-header p{
+header p {
   padding-bottom: 35px;
 }
 
-#pattern{
-  position:absolute;
-  width: 3000px; 
-  inset: 0; 
-  z-index: -1; 
- transform: translateY(-42%);
- left: -25%;
-
+#pattern {
+  position: absolute;
+  width: 3000px;
+  inset: 0;
+  z-index: -1;
+  transform: translateY(-42%);
+  left: -25%;
 }
 
-.innerHeader{
+#patternMobile {
+  display: none;
+}
+
+.innerHeader {
   position: relative;
-  z-index: 1; 
+  z-index: 1;
 }
 
-.main1{
+.main1 {
   background-color: white;
   position: relative;
   padding-top: 125px;
   padding-bottom: 125px;
-  
 }
 
-#editor{
-position: absolute;
-transform: translateY(-13%);
-right: -12%;
-width: 800px;
-
+#editor {
+  position: absolute;
+  transform: translateY(-13%);
+  right: -12%;
+  width: 800px;
 }
 
-#innerMain1{
+#editorMobile {
+  display: none;
+}
+
+#innerMain1 {
   width: 50%;
   padding: 80px;
- 
 }
 
-.main1 h2{
-  font-size:35px;
-  
+.main1 h2 {
+  font-size: 35px;
 }
 
-#innerMain1 h3{
+#innerMain1 h3 {
   font-size: 25px;
   margin-bottom: 20px;
 }
 
-#innerMain1 div{
+#innerMain1 div {
   padding: 30px 70px;
 }
 
-.main2{
+.main2 {
   position: relative;
   background-blend-mode: lighten;
- z-index:0;
- border: 1px solid hsl(237, 23%, 31%);
+  z-index: 0;
+  border: 1px solid hsl(237, 23%, 31%);
   border-bottom-left-radius: 80px;
   border-top-right-radius: 80px;
 }
 
-.main2 h2{
+.main2 h2 {
   font-size: 35px;
   margin-bottom: 20px;
 }
 
-#innerMain2{
-width: 50%;
-margin-left: 50%;
-padding: 110px 150px 115px 50px;
-position: relative;
-
+#innerMain2 {
+  width: 50%;
+  margin-left: 50%;
+  padding: 110px 150px 115px 50px;
+  position: relative;
 }
 
-#phones{
-position: absolute;
-transform: translateY(-13%);
-left: 10%;
-z-index:2;
+#phones {
+  position: absolute;
+  transform: translateY(-13%);
+  left: 10%;
+  z-index: 2;
 }
 
-#circles{
+#circles {
   position: absolute;
   transform: translateY(-52%);
   left: -13%;
- z-index: 1;
- 
+  z-index: 1;
 }
 
-.clip{
+.clip {
   inset: 0;
-  position:absolute;
+  position: absolute;
   overflow: hidden;
   border: 1px solid hsl(237, 23%, 31%);
   border-bottom-left-radius: 80px;
   border-top-right-radius: 80px;
 }
 
-.main3{
+.main3 {
   position: relative;
   margin: 120px 100px 30px 0px;
 }
 
-.innerMain3{
+.innerMain3 {
   padding: 200px 100px;
   width: 50%;
   margin-left: 50%;
 }
 
-#laptop{
+#laptop {
   position: absolute;
   left: -20%;
 }
 
-.innerMain3 div{
+#laptopMobile {
+  display: none;
+}
+
+.innerMain3 div {
   padding-bottom: 70px;
 }
 
-.innerMain3 h3{
+.innerMain3 h3 {
   font-size: 25px;
   margin-bottom: 20px;
 }
 
-footer{
+footer {
   padding: 80px 270px 100px 170px;
   background-color: #24242c;
   border: 1px solid #24242c;
   border-top-right-radius: 80px;
 }
 
-footer div{
+footer div {
   flex-direction: column;
- gap: 12px;
+  gap: 12px;
 }
 
-footer p{
+footer p {
   font-size: 18px;
   margin-bottom: 20px;
 }
 
-footer a{
+footer a {
   color: #a5a6ad;
   text-decoration: none;
 }
 
-footer a:hover{
+footer a:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 
-#signupBtn:hover, #startBtn:hover{
-background-color: hsl(355, 100%, 74%);
-color: white;
-cursor: pointer;
+#signupBtn:hover,
+#startBtn:hover {
+  background-color: hsl(355, 100%, 74%);
+  color: white;
+  cursor: pointer;
 }
 
-#learnBtn:hover{
+#learnBtn:hover {
   background-color: white;
-  cursor:pointer;
-  color: hsl(353, 100%, 62%) ;
+  cursor: pointer;
+  color: hsl(353, 100%, 62%);
 }
 
-.links > :nth-child(n+2):hover{
-text-decoration: underline;
+.links > :nth-child(n + 2):hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
-.links > :nth-child(n+2):hover img {
+.links > :nth-child(n + 2) img {
+  transition: transform 0.3s ease;
+}
+
+.links > :nth-child(n + 2):hover img {
   transform: rotate(180deg);
 }
 
-#connect{
+#connect {
   position: relative;
 }
 
-.dropdown{
+.dropdown {
   position: absolute;
   top: 98%;
   right: -30%;
@@ -255,21 +356,351 @@ text-decoration: underline;
   padding: 15px;
   border: 1px solid white;
   border-radius: 5px;
- gap: 3px;
- visibility: hidden;
+  gap: 3px;
+  visibility: hidden;
 }
 
-.dropdown a{
+.dropdown a {
   text-decoration: none;
   color: grey;
   font-size: 13px;
-  font-weight: 600; 
+  font-weight: 600;
 }
 
-#connect:hover .dropdown{
-visibility: visible;
+#connect:hover .dropdown {
+  visibility: visible;
 }
 
-.dropdown a:hover{
+.dropdown a:hover {
   color: black;
+}
+
+/* Media Queries */
+
+/* @media (min-width: 2000px) {
+  #pattern {
+    width: 3370px;
+    left: 23%;
+  }
+
+  #editor {
+    right: 3%;
+  }
+
+  #innerMain1 {
+    padding: 120px;
+    padding-left: 250px;
+  }
+
+  #phones {
+    left: 14%;
+  }
+
+  #circles {
+    left: 2%;
+  }
+
+  #laptop {
+    left: 5%;
+  }
+
+  .main3 {
+    margin: 150px 100px 100px 0px;
+  }
+} */
+
+@media (max-width: 1300px) {
+  #pattern {
+    width: 2500px;
+    transform: translateY(-41%);
+    left: -20%;
+  }
+
+  #editor {
+    transform: translateY(-2%);
+    right: -12%;
+    width: 650px;
+  }
+
+  #circles {
+    width: 950px;
+    left: -16%;
+    transform: translateY(-55%);
+  }
+
+  #phones {
+    width: 450px;
+    left: 8%;
+  }
+
+  #innerMain2 {
+    padding: 70px 105px 85px 50px;
+  }
+
+  #laptop {
+    left: -15%;
+    width: 700px;
+  }
+
+  .innerMain3 {
+    padding: 70px 50px;
+  }
+}
+
+@media (max-width: 1040px) {
+  header {
+    padding: 50px 70px;
+    padding-bottom: 120px;
+  }
+
+  .links div {
+    margin-left: 10px;
+    margin-right: 15px;
+  }
+
+  #pattern {
+    width: 2300px;
+    transform: translateY(-40%);
+    left: -36%;
+  }
+
+  #editor {
+    transform: translateY(7%);
+    right: -15%;
+    width: 535px;
+  }
+
+  .main1 {
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
+
+  #phones {
+    width: 400px;
+    left: 5%;
+  }
+
+  #circles {
+    width: 780px;
+    left: -24%;
+    transform: translateY(-52%);
+  }
+
+  #innerMain2 {
+    padding: 38px 50px 29px 30px;
+  }
+
+  #laptop {
+    width: 560px;
+    left: -15%;
+  }
+
+  .main3 {
+    margin: 100px 49px 30px 0px;
+  }
+
+  .innerMain3 {
+    padding: 40px 20px;
+  }
+
+  .innerMain3 div {
+    padding-bottom: 50px;
+  }
+
+  #innerMain1 {
+    padding: 35px;
+  }
+
+  footer {
+    padding: 50px 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .links > :nth-child(n + 2),
+  nav .buttons {
+    display: none;
+  }
+
+  #hamburger {
+    display: block;
+  }
+
+  .hamburgerData {
+    display: flex;
+  }
+
+  .hamburgerData div:hover {
+    cursor: pointer;
+    color: black;
+  }
+
+  .hamburgerData div img {
+    margin-bottom: 1px;
+    transition: transform 0.3s ease;
+  }
+
+  .hamburgerData div:hover img {
+    transform: rotate(180deg);
+  }
+
+  #hamburgerConnect:hover .hamburgerDataDropdown {
+    visibility: visible;
+  }
+
+  header h1 {
+    padding-top: 60px;
+    font-size: 40px;
+  }
+
+  .buttons :nth-child(1),
+  .buttons :nth-child(2) {
+    padding: 10px 20px;
+  }
+
+  .main1 h2 {
+    font-size: 28px;
+  }
+
+  #pattern {
+    display: none;
+  }
+
+  #patternMobile {
+    display: block;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    transform: translateY(-22%);
+    left: -35%;
+  }
+
+  #editor {
+    display: none;
+  }
+
+  #editorMobile {
+    display: block;
+    padding-top: 30px;
+  }
+
+  #innerMain1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+  }
+
+  #innerMain1 div {
+    padding: 0;
+    text-align: center;
+  }
+
+  .main2 > div {
+    flex-direction: column;
+  }
+
+  #innerMain2 {
+    width: 90%;
+    margin-left: 0;
+    padding: 110px 150px 115px 50px;
+  }
+
+  #phones {
+    position: static;
+    /* transform: translateY(-13%);
+  left: 10%; */
+  }
+
+  #innerMain2 {
+    padding: 20px 20px 90px 21px;
+  }
+
+  #circles {
+    left: -24%;
+    transform: translateY(-38%);
+  }
+
+  #phones {
+    left: 6%;
+    transform: translateY(-30%);
+  }
+
+  .main1 {
+    padding-bottom: 100px;
+  }
+
+  #innerMain2 {
+    text-align: center;
+  }
+
+  #laptop {
+    display: none;
+  }
+
+  #laptopMobile {
+    display: block;
+    position: static;
+  }
+
+  .main3 > div {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 40px; */
+  }
+
+  .main3 {
+    margin: 70px 35px 0px 35px;
+  }
+
+  .innerMain3 {
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  .innerMain3 div {
+    text-align: center;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  footer div {
+    gap: 7px;
+  }
+
+  header {
+    height: 420px;
+    padding: 50px 20px;
+  }
+
+  footer div p, footer div a{
+    text-align: center;
+  }
+}
+
+@media (max-width: 425px) {
+  header {
+    padding: 50px 20px;
+    padding-bottom: 80px;
+  }
+
+  #circles {
+    left: -45%;
+    transform: translateY(-38%);
+  }
+
+  footer {
+    padding: 50px 100px;
+  }
+
+  #patternMobile {
+    transform: translateY(-25%);
+    left: -77%;
+  }
 }
