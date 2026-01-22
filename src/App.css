@@ -1,4 +1,4 @@
-.container{
+.container {
   max-width: 1310px;
   margin: 0 auto;
   overflow-x: hidden;
@@ -679,7 +679,8 @@ footer a:hover {
     padding: 50px 20px;
   }
 
-  footer div p, footer div a{
+  footer div p,
+  footer div a {
     text-align: center;
   }
 }
